@@ -1,0 +1,47 @@
+.Menu__Container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: .75rem 0;
+}
+
+.Menu__MenuItemActive {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: 0;
+  font-family: 'Titillium Web', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FAA500;
+}
+
+.Menu__MenuItemActive svg {
+  margin-right: 8px;
+}
+
+.Menu__MenuItemItem {
+  font-size: .875rem;
+  color: inherit;
+  font-weight: inherit;
+}
+
+.Menu__MenuItem {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: 0;
+  font-family: 'Titillium Web', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #353535;
+}
+
+@media screen and (max-width: 1024px) {
+  .Menu__Container {
+    display: none;
+  }
+}

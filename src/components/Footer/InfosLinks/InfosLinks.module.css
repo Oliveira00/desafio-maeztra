@@ -1,0 +1,106 @@
+.InfosLinks__Container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: 0 auto 2rem;
+}
+
+.InfosLinks__Column {
+  display: flex;
+  flex-direction: column;
+}
+
+.InfosLinks__ColumnTitle {
+  font-family: 'Titillium Web', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: #353535;
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+
+.InfosLinks__ColumnItem {
+  text-decoration: none;
+  font-family: 'Titillium Web', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+.InfosLinks__ColumnItem:last-child {
+  margin-bottom: 0;
+}
+
+.InfosLinks__Accordion {
+  padding: 10px 0;
+}
+
+.InfosLinks__AccordionContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+}
+
+.InfosLinks__AccordionContainer input {
+  display: none;
+}
+
+.InfosLinks__AccordionTitle {
+  font-family: 'Titillium Web', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #353535;
+  padding: 10px 0;
+}
+
+.InfosLinks__AccordionTitle::after {
+  content: "+";
+}
+
+.InfosLinks__AccordionContainer input:checked ~ .InfosLinks__AccordionTitle {
+  padding: 10px 0 0;
+}
+
+.InfosLinks__AccordionContainer input:checked ~ .InfosLinks__AccordionTitle::after {
+  content: "-";
+}
+
+.InfosLinks__AccordionLinksContainer {
+  opacity: 0;
+  position: absolute;
+  right: 100%;
+  top: 20px;
+  pointer-events: none;
+  transition: all .3s ease-in-out;
+}
+
+.InfosLinks__AccordionLinks {
+  font-family: 'Titillium Web', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  padding: 10px 0;
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.InfosLinks__AccordionContainer input:checked ~ .InfosLinks__AccordionLinksContainer {
+  opacity: 1;
+  position: relative;
+  pointer-events: all;
+  right: 0;
+}

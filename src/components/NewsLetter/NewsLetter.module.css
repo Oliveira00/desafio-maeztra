@@ -1,0 +1,85 @@
+.NewsLetter__Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  border-top: 2px solid #EFEFEF;
+  border-bottom: 2px solid #EFEFEF;
+  background-color: #FFFFFF;
+  padding: 40px 20px;
+}
+
+.NewsLetter__Container span {
+  font-family: 'Titillium Web', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 37px;
+  color: #000000;
+}
+
+.NewsLetter__InputContainer {
+  display: flex;
+  align-items: center;
+}
+
+.NewsLetter__InputContainer input {
+  background: #FFFFFF;
+  border: 1px solid #353535;
+  border-right: 0;
+  border-radius: 4px 0 0 4px;
+  height: 40px;
+  padding: 0 20px;
+  width: 25.98vw;
+  max-width: 499px;
+  font-family: 'Titillium Web', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #353535;
+}
+
+.NewsLetter__InputContainer button {
+  background: #FAA500;
+  border: 1px solid #FAA500;
+  border-radius: 4px;
+  font-family: 'Titillium Web', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  width: 6.82vw;
+  max-width: 131px;
+}
+
+@media screen and (max-width: 1024px) {
+  .NewsLetter__Container {
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px 30px;
+  }
+
+  .NewsLetter__Container span {
+    white-space: nowrap;
+  }
+
+  .NewsLetter__InputContainer {
+    display: flex;
+    gap: 15px;
+  }
+
+  .NewsLetter__InputContainer input {
+    height: 26px;
+    width: 204px;
+    border-radius: 4px;
+    border-right: 1px solid #353535;
+  }
+
+  .NewsLetter__InputContainer button {
+    height: 26px;
+    width: 79px;
+    font-size: 14px;
+  }
+}

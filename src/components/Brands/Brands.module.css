@@ -1,0 +1,48 @@
+.Brands__Container {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0 2rem;
+}
+
+.Brands__Title {
+  font-family: 'Titillium Web', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 49px;
+  text-align: center;
+  color: #353535;
+}
+
+.Brands__List {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: 100%;
+  padding: 0 40px;
+  margin: 0 auto;
+  overflow-x: auto;
+  box-sizing: border-box;
+}
+
+.Brands__Item {
+  object-fit: contain;
+  min-width: 280px;
+  width: 16.04vw;
+  max-width: 308px;
+}
+
+@media screen and (max-width: 1500px) {
+  .Brands__List {
+    justify-content: flex-start;
+    padding: 0 20px;
+  }
+  
+  .Brands__List::-webkit-scrollbar {
+    display: none;
+  }
+}

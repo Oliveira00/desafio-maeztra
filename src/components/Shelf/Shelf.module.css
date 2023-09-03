@@ -1,0 +1,242 @@
+.Shelf__Title {
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.CustomProductImage_Wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.CustomProductImage {
+  position: relative;
+  margin: 0 1rem;
+}
+
+.CustomProductImage_Wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.CustomProductImage_SwiperContainer {
+  width: 100%;
+  max-width: 1600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CustomProductImage_SwiperSlide {
+  width: fit-content;
+  height: 100%;
+  overflow: hidden;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.CustomProductImage_SwiperContainer--vertical {
+  overflow-y: scroll !important;
+}
+
+.CustomProductImage_SwiperContainer--vertical::-webkit-scrollbar {
+  display: none !important;
+}
+
+.CustomProductImage_SwiperSlide > .swiper-button-next,
+.CustomProductImage_SwiperSlide > .swiper-button-prev {
+  background-color: none;
+  border: transparent;
+}
+
+.CustomProductImage_SwiperContainer {
+  position: relative;
+}
+
+.CustomProductImage_SwiperContainer .CustomProductImage_SwiperArrow {
+  position: absolute;
+  z-index: 99;
+  width: 20px;
+  background: transparent;
+  border: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+  cursor: pointer;
+  height: 32px;
+}
+
+.CustomProductImage_SwiperContainer .CustomProductImage_SwiperArrow svg {
+  height: 100%;
+}
+
+.CustomProductImage_SwiperContainer .CustomProductImage_SwiperArrow:first-of-type {
+  left: 0;
+  background: url(../../assets/arrowLeft.png);
+}
+
+.CustomProductImage_SwiperContainer .CustomProductImage_SwiperArrow:last-of-type {
+  right: 0;
+  background: url(../../assets/arrowRight.png);
+}
+
+.CustomProductImage_SwiperSlideItem {
+  width: fit-content;
+  max-width: 100%;
+  height: 100% !important;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+  .CustomProductImage_SwiperSlideItem:hover {
+    transition: all .2s ease-in-out;
+    filter: brightness(90%);
+  }
+}
+
+.CustomProductImage_SwiperSlide {
+  position: relative;
+}
+
+.CustomProductImage_SwiperSlide .swiper-pagination-bullets {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.CustomProductImage_SwiperSlide
+  .swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  margin: 0 4px;
+}
+
+.CustomProductImage_SwiperSlide
+  .swiper-pagination-bullets
+  .swiper-pagination-bullet-active {
+  background-color: #000;
+}
+
+@media screen and (max-width: 1024px) {
+  .CustomProductImage_SwiperContainer .CustomProductImage_SwiperArrow  {
+    display: none;
+  }
+  
+  .CustomProductImage_SwiperSlide
+    .swiper-pagination-bullets
+    .swiper-pagination-bullet-active {
+    background-color: #e41f22;
+  }
+
+  .CustomProductImage_SwiperContainer .CustomProductImage_SwiperArrow {
+    background-color: #fff;
+    border: 1px solid #ced0ca;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+}
+
+  .CustomProductImage_SwiperContainer .CustomProductImage_SwiperArrow svg {
+    transform: scale(0.7) !important;
+  }
+
+  .CustomProductImage_SwiperContainer .CustomProductImage_SwiperArrow:first-of-type {
+    transform: rotate(180deg) !important;
+  }
+}
+
+.Shelf__ProductsContainer {
+  max-width: 308px;
+  padding: 0 24px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.Shelf__ColorsContainer {
+  display: flex;
+  align-content: center;  
+  gap: 8px;
+  margin: 8px 0;
+}
+
+.Shelf__Colors {
+  width: 27px;
+  height: 27px;
+  border-radius: 4px;
+}
+
+.Shelf__Price {
+  font-family: 'Titillium Web', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #353535;
+  margin: 0 0 8px;
+}
+
+.Shelf__Name {
+  font-family: 'Titillium Web', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.Shelf__Desc {
+  font-family: 'Titillium Web', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  opacity: 0.5;
+  height: 60px;
+  max-width: 245px;
+}
+
+.Shelf__Button {
+  font-family: 'Titillium Web', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  background: #FAA500;
+  border: 0;
+  border-radius: 4px;
+  width: 100%;
+  height: 35px;
+}
+
+@media screen and (max-width: 1024px) {
+  .Shelf__Desc {
+    height: 80px;
+  }
+
+  .CustomProductImage_Wrapper {
+    padding: 0 20px;
+  }
+}

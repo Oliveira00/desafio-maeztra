@@ -1,0 +1,34 @@
+.BottomFooter__Container {
+  width: 100%;
+  padding: .5rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #353535;
+  box-sizing: border-box;
+}
+
+.BottomFooter__Items {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.BottomFooter__SocialMedia {
+  text-decoration: none;
+  color: #FFF;
+}
+
+@media screen and (max-width: 1024px) {
+  .BottomFooter__Container {
+    padding: 20px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+  }
+
+  .BottomFooter__Container svg {
+    transform: scale(0.8);
+  }
+}

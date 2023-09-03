@@ -1,0 +1,95 @@
+.BenefitsBar__Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+  overflow: hidden;
+}
+
+.BenefitsBar__Title {
+  font-weight: 700;
+  color: #353535;
+  font-family: 'Titillium Web', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #353535;
+}
+
+.BenefitsBar__List {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: .5rem;
+  gap: 16px;
+  overflow-x: scroll;
+  
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.BenefitsBar__List::-webkit-scrollbar {
+  display: none;
+}
+
+.BenefitsBar__Item {
+  display: flex;
+  align-items: center;
+  padding: .5rem 1rem;
+  background: #EFEFEF;
+  border-radius: 4px;
+  min-width: 280px;
+  width: 16.04vw;
+  max-width: 308px;
+}
+
+.BenefitsBar__Content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin-left: .5rem;
+  width: 100%;
+}
+
+.BenefitsBar__ItemTitle {
+  color: #353535;
+  font-size: .875rem;
+  width: 100%;
+  font-family: 'Titillium Web', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #353535;
+}
+
+.BenefitsBar__ItemSubtitle {
+  font-size: .75rem;
+  width: 100%;
+  font-family: 'Titillium Web', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+}
+
+@media screen and (max-width: 1500px) {
+  .BenefitsBar__List {
+    justify-content: flex-start;
+    padding: 0 40px;
+  }
+
+  .BenefitsBar__List::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .BenefitsBar__List {
+    padding: 0 20px;
+  }
+}
